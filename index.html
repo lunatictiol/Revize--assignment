@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize umbrella</title>
+    <link rel="icon" href="/public/loader_icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="main" class="main">
+        <di class="inner_container">
+            <div class="umbrella-container">
+                <img id="main-image" class="umbrella" src="./public/Blue_umbrella.png" alt="Main Umbrella" />
+                <img id="bottom-image" class="bottom-image" src="" alt="Loading Icon" />
+            </div>
+
+            <div class="side_container">
+                <h1>Custom Umbrella</h1>
+                <div>
+
+                    <div id="blue" class="circle blue" onclick="handleClick('blue')"></div>
+                    <div id="pink" class="circle pink" onclick="handleClick('pink')"></div>
+                    <div id="yellow" class="circle yellow" onclick="handleClick('yellow')"></div>
+                </div>
+                <h3>Customise your Umbrella</h3>
+                <span class="subtext">Upload a logo for instant preview</span>
+                <span class="note">.png and .jpeg file only. Max size is 5MB.</span>
+                <div class="upload-btn-container">
+
+
+                    <label class="upload-btn">
+                        <embed class="icon" src="./public/upload_icon.svg" type="image/svg+xml" width="20"
+                            height="20" />
+                        <span class="btn-text">UPLOAD LOGO</span>
+                        <input type="file" id="fileInput" accept="image/png, image/jpeg" hidden />
+                    </label>
+
+                    <span class="remove-icon" id="removeBtn" hidden title="Remove">X</span>
+                </div>
+            </div>
+        </di>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

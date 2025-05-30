@@ -1,0 +1,156 @@
+.main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+
+.umbrella-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50vh;       
+  width: 70%;
+}
+
+.umbrella {
+  width: 400px;
+  height: 350px;
+}
+.loading-size {
+  width: 60px;
+  height: 60px;
+}
+.bottom-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none; 
+  width: 50px;
+  height: 50px;
+  margin-bottom: 80px;
+  
+}
+
+.removeBtn{
+  color: white;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: block;
+}
+
+.note {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #888;
+  display: block;
+}
+
+.inner_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 100%;
+
+   
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;       
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+
+.pink{
+  background-color: #e21a70;
+}
+
+.yellow {
+  background-color: #ffcf43;
+}
+
+.blue {
+  background-color:#38b2dc;
+
+}
+
+.side_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.upload-btn-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: sans-serif;
+  position: relative;
+  margin-top: 10px;
+}
+.upload-btn{
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+  width: 100%;
+ 
+}
+.upload-btn .btn-text{
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+
+}
+.upload-btn-container .icon{
+  fill: white;
+  color: white;
+  stroke: white;
+}
+
+
+.upload-btn .remove-icon {
+  margin-left: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+.rotating {
+  transition: transform 0.3s ease;
+}
+
+.rotating.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
